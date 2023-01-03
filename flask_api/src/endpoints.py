@@ -7,7 +7,11 @@ def test():
 
 def db_test():
     
-        msg =get_message()
+        msg =list(get_message())[0]['message']
         return jsonify({"msg":"MongoDb connected.", "sucess": True, "code":200,"msg":msg}), 200
 
+def db_test_create():
+    
+        create_message()
+        return jsonify({"sucess": True, "code":200,"msg":"Mensagem Criada!"}), 200
 
