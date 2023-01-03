@@ -10,7 +10,7 @@ db = get_db()
 
 
 def create_message():
-    db.helloWorld.create_one({"_id":"HELLOMESSAGE","message":"HELLO WOLRD"})
+    db.helloWorld.insert_one({"_id":"HELLOMESSAGE","message":"HELLO WOLRD"})
 
 def get_message():
    return db.helloWorld.find_one({"_id":"HELLOMESSAGE"})
