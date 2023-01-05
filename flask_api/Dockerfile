@@ -1,7 +1,7 @@
 FROM python:3.7-slim
 
 ENV CONTAINER_HOME=/var/www
-ADD . $CONTAINER_HOME
+COPY . $CONTAINER_HOME
 WORKDIR $CONTAINER_HOME
 EXPOSE 5001
 COPY requirements.txt requirements.txt

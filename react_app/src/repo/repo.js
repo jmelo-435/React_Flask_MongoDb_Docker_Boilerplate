@@ -78,7 +78,7 @@ export async function dbTestApi() {
     constructor(res) {
       this.responseCode = extractResponseCode(TestResponseCodes, res);
       this.sucess = res.sucess;
-      this.message = res.msg;
+      this.message = res.payload;
       return this;
     }
   }
