@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import '../css/MainContent.css'
 import {dbTestApi,dbTestCreateApi} from "../repo/repo"
 import { useState ,useEffect} from "React";
