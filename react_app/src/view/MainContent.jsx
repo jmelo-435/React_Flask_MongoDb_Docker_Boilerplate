@@ -1,7 +1,7 @@
-import React from "react";
+import React from "React";
 import '../css/MainContent.css'
 import {dbTestApi,dbTestCreateApi} from "../repo/repo"
-import { useState ,useEffect} from "react";
+import { useState ,useEffect} from "React";
 
 const MainContent =() =>{
 const [msg, setMsg] = useState([]);

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "React";
 import MainContent from "./view/MainContent";
 
 const App =() =>{
