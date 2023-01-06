@@ -1,7 +1,6 @@
 import {
-  DdTestResponseCodes,
+  DbTestResponseCodes,
   TestResponseCodes,
-
 } from "./ApiResponseCodes";
 import axios from "axios";
 
@@ -21,7 +20,6 @@ const Methods = Object.freeze({
   HEAD: "HEAD",
   PATCH: "PATCH",
 });
-
 
 class ApiRequestParameters {
   constructor(endpoint = Endpoints.Api, data = null, method = Methods.GET) {
@@ -44,15 +42,13 @@ function extractResponseCode(possibleResponseCodes, res) {
 async function getApiResponse(parameters) {
   const response = await axios({
     data: parameters.data,
-    headers: {
-    },
+    headers: {},
     method: parameters.method,
     url: root + parameters.endpoint,
-    withCredentials:true
+    withCredentials: true
   });
   return response.data;
 }
-
 
 export async function testApi() {
   class TestResponse {
@@ -76,7 +72,7 @@ export async function testApi() {
 export async function dbTestApi() {
   class DbTestResponse {
     constructor(res) {
-      this.responseCode = extractResponseCode(TestResponseCodes, res);
+      this.responseCode = extractResponseCode(DbTestResponseCodes, res);
       this.sucess = res.sucess;
       this.message = res.payload;
       return this;
@@ -95,7 +91,7 @@ export async function dbTestApi() {
 export async function dbTestCreateApi() {
   class DbTestCreateResponse {
     constructor(res) {
-      this.responseCode = extractResponseCode(TestResponseCodes, res);
+      this.responseCode = extractResponseCode(DbTestResponseCodes, res);
       this.sucess = res.sucess;
       this.message = res.msg;
       return this;
@@ -105,8 +101,7 @@ export async function dbTestCreateApi() {
   const params = new ApiRequestParameters(
     Endpoints.DbTestCreate,
     "{}",
-    Methods.POST
-  );
+    Methods.POST);
   const response = await getApiResponse(params);
   return new DbTestCreateResponse(response);
 }
