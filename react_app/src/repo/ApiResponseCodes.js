@@ -5,4 +5,3 @@ export const DbTestResponseCodes = Object.freeze({
   SUCCESS: 200,
   NOT_CONECTED: 500
 });
-

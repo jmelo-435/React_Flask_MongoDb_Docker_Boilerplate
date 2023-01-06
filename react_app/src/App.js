@@ -1,12 +1,12 @@
 import React from "react";
 import MainContent from "./view/MainContent";
 
-const App =() =>{
-  return(
+const App = () => {
+  return (
     <div className="app">
-    <MainContent/>
+      <MainContent />
     </div>
-        );
+  );
 }
 
 export default App;

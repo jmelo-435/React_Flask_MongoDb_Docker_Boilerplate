@@ -65,7 +65,7 @@ export async function testApi() {
     "{}",
     Methods.GET
   );
-  const response = await getApiResponse(params, token);
+  const response = await getApiResponse(params);
   return new TestResponse(response);
 }
 
