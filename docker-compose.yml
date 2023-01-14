@@ -40,9 +40,5 @@ services:
     image: mongo
     networks:
       - bridge
-  mongo-resource:
-    image: mongo
-    networks:
-      - bridge
 networks:
   bridge:
