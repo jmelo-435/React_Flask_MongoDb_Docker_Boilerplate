@@ -36,7 +36,7 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]]()
-This app consists in a enviroment with four Docker containers(Ngninx,React,Flask,MongoDb). Te front-end allows the creation of elements in the database via API endpoints. The objective of this app is to provide a good start point for projects using this kind of stack, and showcase the simplicity of the deployment of this kind of Docker based projects. 
+This app consists in a enviroment with four Docker containers(Ngninx,React,Flask,MongoDb). The front-end allows the creation of elements in the database via API endpoints. The objective of this app is to provide a good start point for projects using this kind of stack, and showcase the simplicity of the deployment of this kind of Docker based projects. 
 
 ### Built With
 
