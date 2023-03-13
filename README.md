@@ -43,18 +43,32 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]]()
-This app consists in a enviroment with four Docker containers(Ngninx,React,Flask,MongoDb). The front-end allows the creation of elements in the database via API endpoints. The objective of this app is to provide a good start point for projects using this kind of stack, and showcase the simplicity of the deployment of this kind of Docker based projects. 
+This app consists in a enviroment with four Docker containers(Ngninx,React,Flask,MongoDb). The front-end allows the creation of elements in the database via API endpoints. The objective of this app is to provide a good start point for projects using this kind of stack, and show how simple is to deploy this kind of Docker based projects. 
 
 ### Built With
 
 <p align="left">
+  <a href="https://flask.palletsprojects.com/en/2.2.x/">
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  </a>
+  <a href="https://reactjs.org/">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  </a>
+   <a href="https://www.docker.com/">
+    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  </a>
+   <a href="https://www.mongodb.com/">
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+  </a>
+  <a href = "https://www.nginx.com/">
   <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  </a>
+  <a href="https://www.python.org/">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  </a>
+  <a href="https://www.javascript.com/">
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+  </a>
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -63,7 +77,6 @@ This app consists in a enviroment with four Docker containers(Ngninx,React,Flask
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -81,23 +94,23 @@ After following the steps in the documentation:
    docker compose version
    ```
 
-### Installation
+### Building the Enviroment
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   https://github.com/jmelo-435/React_Flask_MongoDb_Docker_Boilerplate
    ```
-3. Install NPM packages
+2. In the same directory of the docker-compose.yml file, run this command:
    ```sh
-   npm install
+   docker compose up
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. That's it. You can visit your localhost directory and see the app running. Make sure that all your ports are free, otherwise the Docker build will exit    with an error. You can check if your docker containers are running using the following command:
+   ```sh
+   docker ps
    ```
+If you have any questions please feel free to contact me. 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
