@@ -11,7 +11,7 @@ db = get_db()
 
 def create_message():
     now = str(datetime.now())
-    msg = "Hello World, I've borned at: "+now
+    msg = "Hello World, I was born in: "+now
     db.helloWorld.insert_one({"message":msg})
 
 def get_message():
